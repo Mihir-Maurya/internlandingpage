@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+/* font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 70vh;
+    background-color: aqua;
+    background-image: url('./images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: #fff; 
+}
+section{
+    position: relative;
+    width: 80%;
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+ a{
+    text-decoration: none;
+  
+}
+nav{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+.nav-links ul a{
+    font-family: 'Alata', sans-serif;
+    color: #fff;
+}
+.nav-links ul{
+    display: flex;
+}
+.nav-links ul li{
+    padding: 0.7rem;
+    list-style-type: none;
+}
+
+.hero{
+
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;   
+    font-size: 3.7rem;
+    max-width: 600px;
+    padding: 1.5rem;
+    margin-top: 130px;
+    border: solid 2px #fff;
+ 
+}
+/* .hamburger{
+    display: none;
+} */
+.interactive{
+   position: absolute;
+   top: 35%;
+   left: 50%;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 5rem;
+    padding-right: 0;
+    
+}
+section{
+    overflow: hidden;
+}
+
+.interactive .interactive-header{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    
+}
+.interactive .interactive-content{
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    font-family: 'Alata', sans-serif;
+    color:  hsl(0, 0%, 55%);
+}
+
+.hamburger{
+    position: absolute;
+  
+    height: 30px;
+    width: 30px;
+    top: 2px;
+    right: 2px;
+    display: none;
+}
+/* .hamburger span{
+    height: 4px;
+    width: 100%;
+   border-radius: 10px;
+    background-color: white;
+} */
+/* our creation section  */
+
+.our-creation-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.our-creation-header P{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.btn{
+    color: hsl(0, 0%, 0%);
+    border: 2px solid black;  
+    padding: 10px 20px;
+    
+}
+.btn-container{
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+}
+.mobile-btn{
+    display: inline-block;
+    
+}
+
+
+ .desktop-image .col{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+.desktop-image .col img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* object-fit: cover; */
+    
+}
+
+.mobile-image{
+    display: none;
+}
+.footer{
+    margin-top: 40px;
+    background-color: black;
+    position: relative;
+}
+.footer-icon{
+    width: 150px;
+}
+.logo-social-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+}
+.social-icon img{
+    padding-left: 1em;
+}
+.footer-links-copyright{
+    display: flex;
+    justify-content: space-between;align-items: center;
+    color:hsl(0, 0%, 55%);
+    padding-bottom: 1rem;
+}
+.footer-links a{
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+    padding-right:1em ;
+}
+.copyright{
+    font-family: 'Alata', sans-serif;
+
+}
+.image-container {
+    position: relative;
+  }
+  
+  .image-container p {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    color: hsl(0, 1%, 76%);
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  
+ 
+@media (max-width:767px) {
+    section{
+        width: 90%;
+    }
+   
+    .hero{
+        font-size: 3rem;
+    }
+    .interactive-image{
+        width: 100%;
+    }
+    .nav-links{
+        position: relative;
+        left: -200%;
+    }   
+      .hamburger{
+        display: block;
+        top: 1rem;
+        right: 1rem;
+      }
+     
+     .nav-bar.active{
+        flex-direction: column;
+        align-items: start;
+        background-color: black;
+        height: 100vh;
+        justify-content:start;
+        padding: 1rem;
+      }
+      .nav-links.active{
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .nav-links ul.active{
+        margin-top: 1rem;
+        flex-direction:column;
+        text-align: center;
+        /* background-color: brown; */
+      
+    }
+    .header-section.active{
+        width: 100%;
+        height: 100%;
+        
+        margin-top: 0;
+    }
+    .interactive{
+        position: static;
+        padding: 1rem;
+        text-align: center;
+
+    }
+    /* .col{
+        justify-content: center;
+        
+    } */
+    .image-container p {
+        font-size: 16px;
+      }
+      
+    .logo-social-icon{
+        flex-direction: column;
+    }
+    .social-icon{
+        position: absolute;
+        bottom: 10%;
+        padding: 1rem;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+      }
+      .footer-links-copyright{
+
+        flex-direction: column;
+        }
+}
+@media (max-width:575px) {
+    .hero{
+        font-size: 1.5rem;
+    }
+    .interactive-image{
+        width: 100%;
+    }
+    .interactive .interactive-header{
+        font-size: 1.5rem;
+    }
+    .interactive{
+        position: static;
+        padding: 1rem;
+    }
+    
+  .desktop-image{
+    display: none;
+  }
+  .mobile-image{
+    display: block;
+  }
+  .col img{
+    width: 100%;
+  }
+  .mobile-image .image-container p{
+    font-size: 24px;
+  }
+  .our-creation-header{
+    justify-content: center;
+  }
+  .desktop-btn{
+    display: none;
+  }
+  .btn-container{
+    display: block;
+  }
+}
+
+@media (max-width:365px) {
+    .our-creation-header P{
+        font-size: 2.2rem;
+    }
+    .social-icon{
+        position: absolute;
+        bottom: 20%;
+        padding: 1rem;
+    }
+    .copyright{
+        margin-top: 100px;
+       
+    }
+
+}
+
+@media (max-width:1200px) {
+    
+.interactive .interactive-header{
+    font-size: 2.5rem;
+    }
+    .interactive{
+        padding: 1rem;
+        height: 100%;
+    }
+
+}
+@media (max-width:845px) {
+    .interactive .interactive-header{
+        font-size: 2rem;
+        }
+}
